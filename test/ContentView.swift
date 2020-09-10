@@ -10,7 +10,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            mapView().frame(height: 300)
+            circleImage()
+                .offset(y: -80)
+                .padding(.bottom, -80)
+            VStack(alignment: .leading) {
+                Text("Dominic").font(.title).bold().foregroundColor(.black)
+                HStack {
+                    Text("Software Engineer")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+                    Spacer()
+                    Text("Extroindaier")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+                }
+            }
+            .padding()
+            Spacer()
+        }
     }
 }
 

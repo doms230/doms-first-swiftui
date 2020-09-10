@@ -10,7 +10,11 @@ import SwiftUI
 
 struct circleImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("nasa")
+            .frame(width: 150.00, height: 150.0)
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.white, lineWidth: 4))
+        .shadow(radius: 10)
     }
 }
 
